@@ -12,15 +12,15 @@
   - _Default_ (default value)
     - `--node-status-update-frequency` is set to `10s`
 	- `--node-monitor-grace-period` is set to `40s`
-	- `--default-not-ready-toleration-seconds`, `--default-not-ready-toleration-seconds` are set to `300`
+	- `--default-not-ready-toleration-seconds`, `--default-unreachable-toleration-seconds` are set to `300`
   - _MediumUpdateAverageReaction_
     - `--node-status-update-frequency` is set to `20s`
 	- `--node-monitor-grace-period` is set to `2m`
-	- `--default-not-ready-toleration-seconds`, `--default-not-ready-toleration-seconds` are set to `60`
+	- `--default-not-ready-toleration-seconds`, `--default-unreachable-toleration-seconds` are set to `60`
   - _LowUpdateSlowReaction_
     - `--node-status-update-frequency` is set to `1m`
 	- `--node-monitor-grace-period` is set to `5m`
-	- `--default-not-ready-toleration-seconds`, `--default-not-ready-toleration-seconds` are set to `60`
+	- `--default-not-ready-toleration-seconds`, `--default-unreachable-toleration-seconds` are set to `60`
 
 ### Call flow
 - The following diagram captures the call flow that happens internally when there is a change detected to the above workerLatencyProfile field.
